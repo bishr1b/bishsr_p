@@ -13,13 +13,13 @@ header {
 #nabvar {
   width: 100%;
   padding: 20px 0px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 #nabvar img {
+margin-left: 70px;  
   height: 40px;
-  margin-right: 40px;
   cursor: pointer;
 }
 
@@ -118,21 +118,18 @@ header .content a {
 }
 
 #about {
-  margin:20px 0 ;
-  background-color: #f4f4f4;
+  margin-top: 20px ;
 }
 #about .title {
   text-align: center;
   margin-top: 18px;
 }
 #about .title p h2 {
-  font-size: 40px;
-  color: #383848;
+  font-size: 50px;
   margin-bottom: 40px;
 }
 #about .title p {
-  font-size: 18px;
-  color: #9a9a9a;
+  font-size: 30px;
   font-weight: 600;
   margin:20px ;
 }
@@ -140,19 +137,24 @@ header .content a {
 .aboutt img{
   width: 200px;
   height: 200px;
-  padding: 10px;
-  border-radius: 10%;
+  padding: 10px 0;
+  border-radius: 20%;
+}
+.aboutt img:hover{
+ opacity: 0.7;
+cursor: pointer;
 }
 .aboutt {
 display: flex;
 justify-content: center;
+align-items: center;
 width: 100%;
 background: url(photo/bggg.jpg) center center/cover fixed;
-height: 400px;
+flex-wrap: wrap;
 }
 
 .box {
- width: 20%;
+ width: 15%;
 }
 .box{
   padding:20px;
@@ -162,6 +164,7 @@ height: 400px;
 } .box div{
   font-size: 20px;
   color: white;
+  margin-right: 20px;
 }
 .box div p{
   margin-bottom: 12px;
@@ -180,3 +183,224 @@ height: 400px;
   background-color: #e4b96b;
   color: #383848;
 }
+
+
+
+#langPop{
+  background: url(photo/lang.jpeg) center center/cover fixed no-repeat;
+  color: #fff;
+  text-align: center;
+   height: 130vh;
+  
+}
+#langPop h2{
+text-align: center;
+color: black;
+padding-top: 20px;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+font-weight: bold;
+margin-bottom: 40px;
+}
+
+.langPop-items{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(480px,auto));
+row-gap: 60px;
+
+
+}
+  .langPop-item img{
+    width: 400px;
+    height: 200px;
+    border-radius: 10%;
+  }
+  .langPop-item img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+.langPop-item div{
+  padding: 0 40px;
+box-shadow: #383848;
+  width: 1fr;
+}
+.langPop-item div h3{
+  font-size: 26px;
+  font-weight: 600;
+  color:#000000;
+}
+.langPop-item div p{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+  
+.cycles{
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+}
+.cycles-desc{
+  width: 60%;
+}
+
+.cycles-desc p{
+  font-size: 14px;
+  align-items:center 
+}
+.cycles-desc h2{
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.cycles-img{
+  width: 40%;
+  border-radius: 10px;
+  margin-right: 50px;
+  overflow: hidden;
+  box-shadow: 0px 0px 2px rgb(0 0 0/40% );
+  
+
+}
+.cycles-img dotlottie-player{
+ 
+  margin:0 auto;
+  
+}
+
+#courses{
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items:center ;
+  justify-content: center;
+}
+#courses h3{
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding: 10px;
+  direction: ltr;
+  text-transform: uppercase;
+}
+#courses .content img{
+  width: 200px ;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 40%;
+}
+#courses .content{
+width: 20%;
+margin: 15px;
+box-sizing: border-box;
+float: left;
+text-align: center;
+border-radius: 20px;
+cursor: pointer;
+padding-top: 10px;
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+0 10px 10px rgba(0, 0, 0, 0.22);
+transition: 0.4s;
+}
+#courses .content:hover{
+  box-shadow: 0 3px 6px rbga(0.16),
+  0 3px 6px(rgba(0, 0, 0, 0.23));
+  transform: translate(0px,-8px);
+}
+#courses .content p{
+  text-align:center ;
+  color: #b2bec3;
+  padding-top: 19px;
+  
+}
+.tac{
+  font-size: 20px;
+}
+#courses .content h6{
+  font-size: 26px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+#courses .content ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+#courses .content ul li{
+  padding-bottom: 7px ;
+}
+#courses .content ul li i{
+  font-size: 26px;
+  transition:0.4s ;
+  margin: 3px;
+  color: #ff9f43;
+}
+
+#courses .content ul li i:hover{
+transform:scale(1.3) ;
+transition: 0.6s;
+}
+#courses .content button{
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  width: 100%;
+  padding: 7px;
+  border:0 ;
+  outline: 0;
+  cursor: pointer;
+   margin-top: 5px ;
+   border-radius:10px;
+   font-weight: bold;
+
+}
+.course1{
+  background-color: #2183a2;
+}
+.course2{
+  background-color: #3b3e6e;
+}
+.course3{
+  background-color: #0b0b0b;
+}
+.course3{
+  background-color: #ff9f43;
+}
+@media(max-width:1000px){
+  #courses  .content{
+    width: 45%;
+  }
+  #langPop{
+    height:60vh;
+  }   
+
+}
+@media(max-width:750px){
+  #courses .content{
+    width: 100%;
+  }
+
+}
+@media(max-width:990px){
+  #langPop{
+    height:220vh;
+  }  
+
+}
+@media(max-width:960px){
+  #langPop{
+    height:340vh;
+    width: 100%;
+  }  
+.langPop-item p{
+  font-size: 12px;
+
+}
+}
+
