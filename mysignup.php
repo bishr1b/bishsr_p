@@ -4,11 +4,10 @@ if (!$_SESSION['login']) {
     $_SESSION['login'] = '';
 }
 if ($_SESSION['login'] == 'login') {
-    echo"سجل خروج";
-//     echo "
-// <script>
-//  window.location.href ='index.php';
-// </script>";
+    echo "
+ <script>
+ window.location.href ='asminasset/dashboard.php';
+  </script>";
 }
 if (isset($_POST['signup'])) {
     $username = $_POST['username'];
@@ -27,7 +26,7 @@ if (isset($_POST['signup'])) {
 
         if ($res == true) {
             $_SESSION['login'] = 'login';
-            // header('Location:mylogin.php');
+             header('Location:mylogin.php');
         }
     }
 }

@@ -53,6 +53,7 @@ if($connectios){
                             ?>
 
                 <tr>
+                    
                     <td><?php echo $row['name']; ?></td>
                     <td><?php echo $row['advantage']; ?></td>
                     <td><?php echo $row['time']; ?></td>

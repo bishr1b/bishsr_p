@@ -1,9 +1,9 @@
 <?php  
 require("../configration.php");
 
-if(isset($_POST['update'])){
-
-    $name=$_POST['namee'];
+if(isset($_POST['uppdate'])){
+$nn=$_POST['nana'];
+    $name=$_POST['nameee'];
     $advantage=$_POST['advantage'];
     $time=$_POST['time'];
     $price=$_POST['price'];
@@ -19,7 +19,7 @@ if(isset($_POST['update'])){
 
    
     
-        $insertQuery = "UPDATE courses SET name='$name', advantage='$advantage', time='$time' , price=$price , img='$fileImg' WHERE name='$name' ";;
+        $insertQuery = "UPDATE courses SET name='$name', advantage='$advantage', time='$time' , price=$price , img='$fileImg' WHERE name='$nn' ";;
         $res = mysqli_query($connectios, $insertQuery);
         if ($res) {
             move_uploaded_file($_FILES['myimg']['tmp_name'], "../photo/prodect/".$fileImg);
@@ -51,18 +51,17 @@ if(isset($_POST['update'])){
                 <legend>اضافه كورس الى موقع</legend>
               <?php  if (isset($_GET['name']))
          {
-            $name=$_GET['name'];
-        $Query="SELECT * FROM courses WHERE name='$name' ";
+            $NAME=$_GET['name'];
+        $Query="SELECT * FROM courses WHERE name='$NAME' ";
         $resualt=mysqli_query($connectios,$Query);
         if($resualt){
             $ROW=mysqli_fetch_array($resualt);
         ?>
                 <form action ="edit.php" method="POST" class="form" enctype="multipart/form-data">
-
+<input type="hidden" name="nana" value="<?php echo$ROW['name'] ?>">
                     <div class="input-box">
                         <label>اسم الكورس</label>
-                        <input type="text" placeholder="ادخل اسم الكورس" name="namee" value="<?php echo$ROW['name'] ?>"
-                             >
+                        <input type="text" placeholder="ادخل اسم الكورس" name="nameee" value="<?php echo$ROW['name'] ?>" >
                     </div>
 
                     <div class="input-box">
@@ -96,7 +95,7 @@ if(isset($_POST['update'])){
                    
                         <div class="column-sub">
                         <button type="submit" class="submit"
-                            name="update">تعديل المنتج</button>
+                            name="uppdate">تعديل المنتج</button>
                      
                     </div>
                   

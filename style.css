@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth; 
+}
 header {
   height: 100vh;
   background: url(photo/main.jpg) center center/cover no-repeat;
@@ -44,6 +47,45 @@ a {
   padding: 15px 70px;
   color: white;
   font-weight: 600;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Tajawal', sans-serif;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s, transform 0.3s ease, padding 0.3s;
+}
+
+
+nav ul li a:hover {
+  color: #ffd700;  
+  transform: scale(1.1);  
+  padding-bottom: 10px; 
+}
+
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffd700;
+  transition: width 0.3s ease;
+}
+
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+nav ul li a:active {
+  transform: scale(0.95); 
+  transition: transform 0.3s ease;
 }
 #nabvar .content {
   display: flex;
@@ -103,20 +145,50 @@ header ul li a {
 header .content a {
   margin-right: 40px;
 }
-
+ .bbttn{
+  display: block;
+  margin: 15px auto;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-family: 'Tajawal', sans-serif;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ }
+ .bbttn:hover{
+  background-color: #ffd700;
+  color: #000;
+  transform: scale(1.1);
+ }
 #more {
   margin-top: 40px;
   font-size: 17px;
   color: white;
 }
 .textmore {
-  border: 3px solid rgb(209, 199, 199);
-  padding: 20px 15px;
-  position: relative;
-  width: 50%;
-  margin-right: 40px;
-}
+  display: none;
+  max-height: 0; 
 
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 0 20px; 
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-family: 'Tajawal', sans-serif;
+  line-height: 1.8;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-height: 100px; 
+  overflow: hidden; 
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;}
+
+.textmore.expanded {
+  max-height: 1000px; 
+  display: block; 
+  padding: 20px; 
+}
 #about {
   margin-top: 20px ;
 }
@@ -178,6 +250,11 @@ flex-wrap: wrap;
   padding: 7px;
   border-radius: 50%;
   font-size: 20px;
+  cursor: pointer;
+}
+.aboutt .box a i{
+  cursor: pointer;
+  
 }
 .box div a:hover{
   background-color: #e4b96b;

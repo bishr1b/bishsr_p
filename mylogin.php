@@ -1,7 +1,13 @@
 <?php
 require('configration.php');
+!$_SESSION['login']='';
 
-
+if ($_SESSION['login'] == 'login') {
+    echo "
+ <script>
+ window.location.href ='adminasset/dashboard.php';
+  </script>";
+}
 $password = "";
 $email = "";
 $passwordError = "";

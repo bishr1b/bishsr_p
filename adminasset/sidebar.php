@@ -3,7 +3,7 @@
 
               <li class="profile">
                      <div class="img-box">
-                            <img src="C:\Users\IDM\Downloads\user-200x300.webp">
+                            <img src="../photo/mee.jpg">
                      </div>
                      <h2>كودلي ادمنز</h2>
               </li>
@@ -17,6 +17,12 @@
                      <a href="client.php">
                             <i class="fas fa-user-group"></i>
                             <p>الزبائن</p>
+                     </a>
+              </li>
+              <li>
+                     <a href="custemer.php">
+                            <i class="fas fa-user-group"></i>
+                            <p>رسائل الزبائن</p>
                      </a>
               </li>
               <li>
