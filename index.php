@@ -12,16 +12,13 @@ $res = mysqli_query($connectios, $myQuery);
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="style.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="ahmedtest.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <script
-        src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-        type="module"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -47,9 +44,8 @@ $res = mysqli_query($connectios, $myQuery);
                 </ul>
             </nav>
         </div>
-        <div class="content">
-            <h1>اهلا وسهلا بك في معهد <span
-            class="primary-text">برمجلي-BARMIGLY</span>  ل دورات <span
+        <div class="content" id="home">
+            <h1>اهلا وسهلا بك في معهد <span class="primary-text">برمجلي-BARMIGLY</span> ل دورات <span
                     class="primary-text">البرمجة</span>
                 و تقويه وتطوير التفكير المنطقي و توسيع الافكار</h1>
             <p>هنا ستلقى اشهر لغات برمجه و اين تستخدم و هنالك كورسات ايضا ل
@@ -58,9 +54,10 @@ $res = mysqli_query($connectios, $myQuery);
             <button id="toggleButton" onclick="showMore()" class="bbttn">اقرأ المزيد</button>
 
             <p id="more" class="textmore">
-            هذا المشروع تم عمله بواسطه طلاب مرحله ثانيه معلومات واتصالات مع الاسماء الذين شاركو في تكوين البرنامج حيث تم عمل هذا البرنامج بأستخدام اللغات الآتية: <br>
-            1-HTML, 2-CSS, 3-JAVASCRIPT, 4-PHP,AND BOOTSTRAP
-            نشكر جامعة بغداد كلية الخوارزمي لأعطائنا هذه الفرصة لتقديم البرنامج المتكامل " BARMIGLY"
+                هذا المشروع تم عمله بواسطه طلاب مرحله ثانيه معلومات واتصالات مع الاسماء الذين شاركو في تكوين البرنامج
+                حيث تم عمل هذا البرنامج بأستخدام اللغات الآتية: <br>
+                1-HTML, 2-CSS, 3-JAVASCRIPT, 4-PHP,AND BOOTSTRAP
+                نشكر جامعة بغداد كلية الخوارزمي لأعطائنا هذه الفرصة لتقديم البرنامج المتكامل " BARMIGLY"
 
 
             </p>
@@ -76,43 +73,43 @@ $res = mysqli_query($connectios, $myQuery);
         </div>
 
         <script>
-            const phrases = ['أهلاً_بكم_في_موقعنا', 'أستمع_للموسيقا_الهادئة', 'أنظر_لهذا_العرض', ];
-            let index = 0,
-                letterIndex = 0;
+        const phrases = ['أهلاً_بكم_في_موقعنا', 'أستمع_للموسيقا_الهادئة', 'أنظر_لهذا_العرض', ];
+        let index = 0,
+            letterIndex = 0;
 
-            function type() {
-                if (letterIndex < phrases[index].length) {
-                    document.getElementById('typed-text').innerText += phrases[index][letterIndex];
-                    letterIndex++;
-                    setTimeout(type, 100);
-                } else {
-                    setTimeout(erase, 2000);
-                }
+        function type() {
+            if (letterIndex < phrases[index].length) {
+                document.getElementById('typed-text').innerText += phrases[index][letterIndex];
+                letterIndex++;
+                setTimeout(type, 100);
+            } else {
+                setTimeout(erase, 2000);
             }
+        }
 
-            function erase() {
-                if (letterIndex > 0) {
-                    document.getElementById('typed-text').innerText = phrases[index].slice(0, --letterIndex);
-                    setTimeout(erase, 100);
-                } else {
-                    index = (index + 1) % phrases.length;
-                    setTimeout(type, 1000);
-                }
+        function erase() {
+            if (letterIndex > 0) {
+                document.getElementById('typed-text').innerText = phrases[index].slice(0, --letterIndex);
+                setTimeout(erase, 100);
+            } else {
+                index = (index + 1) % phrases.length;
+                setTimeout(type, 1000);
             }
+        }
 
-            type();
+        type();
         </script>
 
         <style>
-            .typewriter {
-                font-size: 90px;
-                color: #ffea00;
-                font-family: 'Courier New', Courier, monospace;
-                height: 1000px;
-                overflow: hidden;
-                text-align: left;
-                padding-left: 50px;
-            }
+        .typewriter {
+            font-size: 90px;
+            color: #ffea00;
+            font-family: 'Courier New', Courier, monospace;
+            height: 1000px;
+            overflow: hidden;
+            text-align: left;
+            padding-left: 50px;
+        }
         </style>
 
 
@@ -143,10 +140,10 @@ $res = mysqli_query($connectios, $myQuery);
                                 <p>قسم data analysis </p>
                                 <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i
                                         class="fa-brands fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/?hl=en"><ion-icon name="logo-instagram"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/account"><i
-                                        class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/?hl=en">
+                                    <ion-icon name="logo-instagram"><i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/account"><i class="fa-brands fa-youtube"></i></a>
 
                             </div>
                         </div>
@@ -157,10 +154,10 @@ $res = mysqli_query($connectios, $myQuery);
                                 <p>قسم wep design</p>
                                 <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i
                                         class="fa-brands fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/?hl=en"><ion-icon name="logo-instagram"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/account"><i
-                                        class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/?hl=en">
+                                    <ion-icon name="logo-instagram"><i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/account"><i class="fa-brands fa-youtube"></i></a>
                             </div>
                         </div>
                         <div class="box">
@@ -170,10 +167,10 @@ $res = mysqli_query($connectios, $myQuery);
                                 <p>قسم game devloper </p>
                                 <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i
                                         class="fa-brands fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/?hl=en"><ion-icon name="logo-instagram"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/account"><i
-                                        class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/?hl=en">
+                                    <ion-icon name="logo-instagram"><i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/account"><i class="fa-brands fa-youtube"></i></a>
                             </div>
                         </div>
                         <div class="box">
@@ -183,10 +180,10 @@ $res = mysqli_query($connectios, $myQuery);
                                 <p>قسم IOT </p>
                                 <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i
                                         class="fa-brands fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/?hl=en"><ion-icon name="logo-instagram"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/account"><i
-                                        class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/?hl=en">
+                                    <ion-icon name="logo-instagram"><i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/account"><i class="fa-brands fa-youtube"></i></a>
                             </div>
                         </div>
                         <div class="box">
@@ -196,10 +193,10 @@ $res = mysqli_query($connectios, $myQuery);
                                 <p>قسم networks</p>
                                 <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i
                                         class="fa-brands fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/?hl=en"><ion-icon name="logo-instagram"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.youtube.com/account"><i
-                                        class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/?hl=en">
+                                    <ion-icon name="logo-instagram"><i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/account"><i class="fa-brands fa-youtube"></i></a>
 
                             </div>
                         </div>
@@ -333,11 +330,9 @@ $res = mysqli_query($connectios, $myQuery);
         </div>
         <div class="cycles-img">
 
-            <dotlottie-player
-                src="https://lottie.host/f5bc4e99-5ce1-4eb9-8215-039e75d19810/qyyMGvQDaw.json"
-                background="transparent" speed="1"
-                style="width: 400px; height: 400px;" loop
-                autoplay></dotlottie-player>
+            <dotlottie-player src="https://lottie.host/f5bc4e99-5ce1-4eb9-8215-039e75d19810/qyyMGvQDaw.json"
+                background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay>
+            </dotlottie-player>
         </div>
     </section>
 
@@ -349,26 +344,27 @@ $res = mysqli_query($connectios, $myQuery);
 
         ?>
 
-                <div class="content">
-                    <h3><?php echo $ROW['name'] ?></h3>
-                    <img src="photo/prodect/<?php echo $ROW['img'] ?>" alt>
-                    <p> <span
-                            class="primary-text tac">الوقت:</span><?php echo $ROW['time'] ?> <br>
-                        <span class="primary-text tac">الفوائد:</span>
-                        <?php echo $ROW['advantage'] ?>
-                    </p>
+        <div class="content">
+            <h3><?php echo $ROW['name'] ?></h3>
+            <img src="photo/prodect/<?php echo $ROW['img'] ?>" alt>
+            <p> <span class="primary-text tac">الوقت:</span><?php echo $ROW['time'] ?> <br>
+                <span class="primary-text tac">الفوائد:</span>
+                <?php echo $ROW['advantage'] ?>
+            </p>
 
-                    <h6 class="primary-text"> <span class="tac" style="font-size: 22px;font-weight: bold; color: #2f2f2f;;">السعر: </span><?php echo $ROW['price'] ?>$</h6>
-                    <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star-half"></i></li>
-                    </ul>
+            <h6 class="primary-text"> <span class="tac"
+                    style="font-size: 22px;font-weight: bold; color: #2f2f2f;;">السعر:
+                </span><?php echo $ROW['price'] ?>$</h6>
+            <ul>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star-half"></i></li>
+            </ul>
 
-                    <button class="course1"><a href="adminasset/forms.php">لاشتراك ب كورس</a></button>
-                </div>
+            <button class="course1"><a href="adminasset/forms.php">لاشتراك ب كورس</a></button>
+        </div>
 
 
 
@@ -387,7 +383,9 @@ $res = mysqli_query($connectios, $myQuery);
         <div class="continer">
             <div class="contactinfo">
                 <div class="box">
-                    <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+                    <div class="icon">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
                     <div class="text">
                         <h3 style="margin-right: 10px;"> Address</h3>
                         <p>Iraq_Baghdad</p>
@@ -396,7 +394,9 @@ $res = mysqli_query($connectios, $myQuery);
 
 
                 <div class="box">
-                    <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                    <div class="icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
                     <div class="text">
                         <h3>Phone</h3>
                         <p>+964 789 845 2045</p>
@@ -404,7 +404,9 @@ $res = mysqli_query($connectios, $myQuery);
                 </div>
 
                 <div class="box">
-                    <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                    <div class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
                     <div class="text">
                         <h3>Email</h3>
                         <p>Codly&Barmijly
@@ -414,10 +416,18 @@ $res = mysqli_query($connectios, $myQuery);
 
                 <h2 class="txt">تواصل معنا</h2>
                 <ul class="sci">
-                    <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="https://www.instagram.com/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li><a href="https://x.com/i/flow/login"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/?hl=en">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                    <li><a href="https://x.com/i/flow/login">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li><a href="https://www.linkedin.com">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
                 </ul>
             </div>
             <div class="contactform">
@@ -440,7 +450,10 @@ $res = mysqli_query($connectios, $myQuery);
 
                     </div>
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.645902893237!2d44.38531027629338!3d33.27576135833012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15577fd90674b805%3A0x8886ee3106858542!2z2KzYp9mF2LnYqSDYqNi62K_Yp9ivINin2YTYrNin2K_YsdmK2Yc!5e0!3m2!1sen!2siq!4v1732466392673!5m2!1sen!2siq" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.645902893237!2d44.38531027629338!3d33.27576135833012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15577fd90674b805%3A0x8886ee3106858542!2z2KzYp9mF2LnYqSDYqNi62K_Yp9ivINin2YTYrNin2K_YsdmK2Yc!5e0!3m2!1sen!2siq!4v1732466392673!5m2!1sen!2siq"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </form>
             </div>
@@ -468,7 +481,8 @@ $res = mysqli_query($connectios, $myQuery);
                 &copy; 2024 <span>Codly & برمجلي</span> All Rights Reserved
             </p>
             <br>
-            <p>استع للموسيقا الهادئة***<iframe src="https://www.youtuberepeater.com/watch?v=jfKfPfyJRdk#gsc.tab=0" frameborder="0"></iframe>
+            <p>استع للموسيقا الهادئة***<iframe src="https://www.youtuberepeater.com/watch?v=jfKfPfyJRdk#gsc.tab=0"
+                    frameborder="0"></iframe>
         </div>
 
     </div>
