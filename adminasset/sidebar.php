@@ -3,7 +3,7 @@
 
               <li class="profile">
                      <div class="img-box">
-                            <img src="../photo/mee.jpg">
+                            <img src="../photo/amen.jpg">
                      </div>
                      <h2>كودلي ادمنز</h2>
               </li>

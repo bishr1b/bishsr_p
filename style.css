@@ -49,7 +49,6 @@ a {
   font-weight: 600;
 }
 nav ul li a {
-  text-decoration: none;
   color: #fff;
   font-size: 18px;
   font-family: 'Tajawal', sans-serif;
@@ -65,35 +64,6 @@ nav ul li a:hover {
   padding-bottom: 10px; 
 }
 
-
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #ffd700;
-  transition: width 0.3s ease;
-}
-
-
-nav ul li a:hover::after {
-  width: 100%;
-}
-
-
-nav ul li a:active {
-  transform: scale(0.95); 
-  transition: transform 0.3s ease;
-}
-#nabvar .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 75%;
-  flex-direction: column;
-}
 header .content h1 {
   margin-right: 20px;
   margin-top: 170px;
@@ -126,14 +96,7 @@ header ul li a {
   color: white;
   font-weight: 600;
 }
-.btn {
-  padding: 15px 30px;
-  border-radius: 15px;
-}
-.btb {
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-right: 40px;
-}
+
 .btn-primary {
   color: white;
   border: 1px solid #fff;
@@ -170,8 +133,6 @@ header .content a {
 }
 .textmore {
   display: none;
-  max-height: 0; 
-
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 12px;
   padding: 0 20px; 
@@ -182,7 +143,7 @@ header .content a {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   max-height: 100px; 
   overflow: hidden; 
-  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;}
+  transition:  0.5s ease-in-out, padding 0.5s ease-in-out;}
 
 .textmore.expanded {
   max-height: 1000px; 
@@ -232,8 +193,8 @@ flex-wrap: wrap;
   padding:20px;
   display: flex;
   flex-direction: column; 
-
-} .box div{
+}
+ .box div{
   font-size: 20px;
   color: white;
   margin-right: 20px;
@@ -264,8 +225,11 @@ flex-wrap: wrap;
 
 
 #langPop{
-  background: url(photo/lang.jpeg) center center/cover fixed no-repeat;
-  color: #fff;
+  background-image: url(photo/lang.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;  color: #fff;
   text-align: center;
    height: 115vh;
   
@@ -356,10 +320,10 @@ box-shadow: #383848;
 }
 #courses h3{
   text-align: center;
+  color: #000;
   font-size: 30px;
   margin: 0;
   padding: 10px;
-  direction: ltr;
   text-transform: uppercase;
 }
 #courses .content img{
@@ -430,7 +394,6 @@ transition: 0.6s;
   width: 100%;
   padding: 7px;
   border:0 ;
-  outline: 0;
   cursor: pointer;
    margin-top: 5px ;
    border-radius:10px;
@@ -440,15 +403,7 @@ transition: 0.6s;
 .course1{
   background-color: #2183a2;
 }
-.course2{
-  background-color: #3b3e6e;
-}
-.course3{
-  background-color: #0b0b0b;
-}
-.course3{
-  background-color: #ff9f43;
-}
+
 
 
 @media(max-width:1000px){

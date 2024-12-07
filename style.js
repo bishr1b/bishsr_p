@@ -3,7 +3,7 @@ function showMore() {
   var btnText = document.getElementById("toggleButton");
 
   if (moreText.classList.contains("expanded")) {
-    // إذا النص موسع، نخفيه
+    // إذا النص ظاهر نخفيه
     moreText.classList.remove("expanded");
     btnText.textContent = "اقرأ المزيد";
   } else {

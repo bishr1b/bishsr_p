@@ -41,6 +41,7 @@ $res = mysqli_query($connectios, $myQuery);
                     <li><a href="#langPop">لغات البرمجة</a></li>
                     <li><a href="#cycles">الكورسات</a></li>
                     <li><a href="#contact">التواصل معنا</a></li>
+                    <li><a href="PRESS.html"> آخر الأخبار</a> </li>
                 </ul>
             </nav>
         </div>

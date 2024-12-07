@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Blog</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+         
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e4e4e4;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #9b004d, #0b467e);
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: #220a3e;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #c084fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            transform:scale(1.2);
+            color: #ff008c;
+        }
+
+        /* Content Section */
+        .content  {
+            padding: 20px;
+
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #c084fc;
+            margin-bottom: 20px;
+        }
+
+        .article {
+            background-color: #1e1e2f;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .article img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .article p {
+         
+            font-size: large;
+        }
+
+        .article h3 {
+            color: #c084fc;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0d0331;
+            text-align: center;
+            padding: 15px;
+            color: #c084fc;
+            margin-top: 20px;
+        }
+
+        /* Interactive Elements */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #9b59b6;
+            border-radius: 50px;
+            text-align: center;
+            margin-top: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+        }
+
+        .btn:hover {
+            background-color: #c084fc;
+            color: #121212;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Programming World</h1>
+        <p>Explore the latest programming news, resources, and tips!</p>
+    </header>
+
+    <nav class="content">
+        <a class="article" href="index.html">Home</a>    
+        <a class="article" href="#news">News</a>
+        <a class="article" href="index.html">Contact</a>
+    </nav>
+
+    <div class="content" id="news">
+        <h2>Latest News</h2>
+        <div class="article">
+            <h3>AI in JavaScript Libraries</h3>
+            <img  src="photo/a3.jpg"  style="width: 400px; height: 300px;" alt="AI in JavaScript"   >
+            <p>AI tools are being integrated into popular JavaScript libraries to streamline development. Learn more about the future of AI in frontend coding.</p>
+            <a href="https://techcrunch.com" class="btn">Read More</a>
+        </div>
+
+        <div class="article">
+            <h3>Upcoming Apple Developer Tools</h3>
+            <img src="photo/a1.jpg" style="width: 400px; height: 300px;" alt="Apple Tools">
+            <p>Apple announces new developer tools for 2024 aimed at simplifying app development on macOS and iOS platforms.</p>
+            <a href="https://developer.apple.com" class="btn">Read More</a>
+        </div>
+
+    <div class="article">
+        <h3>OpenAI Unveils GPT-4 Turbo for Developers</h3>
+        <img src="photo/a3.jpg" style="width: 400px; height: 300px;" alt="OpenAI Tools">
+        <p>OpenAI introduces GPT-4 Turbo, a faster and cheaper option for developers, enabling advanced AI-powered applications with enhanced capabilities.</p>
+        <a href="https://openai.com/blog/introducing-gpt-4-turbo" class="btn">Read More</a>
+    </div>
+    
+    <div class="article">
+        <h3>GitHub Enhances Copilot with Real-Time Code Review</h3>
+        <img src="photo/a5.png" style="width: 400px; height: 300px;" alt="GitHub Copilot">
+        <p>GitHub's Copilot now includes a real-time code review feature that identifies bugs and suggests improvements as you code.</p>
+        <a href="https://github.blog/" class="btn">Read More</a>
+    </div>
+    
+    <div class="article">
+        <h3>Python 3.13 Released with Performance Boosts</h3>
+        <img src="photo/c6.webp" style="width: 400px; height: 300px;" alt="Python Update">
+        <p>The latest version of Python offers significant performance improvements, including enhanced type hinting and faster execution times.</p>
+        <a href="https://www.python.org" class="btn">Read More</a>
+    </div>
+
+    </div>
+
+
+    
+
+    <footer>
+        <p>&copy; 2024 Programming Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
